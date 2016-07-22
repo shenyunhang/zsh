@@ -1,0 +1,31 @@
+source ~/.shenyunhang-zsh/antigen/antigen.zsh
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+#
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle heroku
+antigen bundle pip
+antigen bundle lein
+antigen bundle command-not-found
+
+# Syntax highlighting bundle.
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Load the theme.
+antigen theme robbyrussell
+
+
+#antigen-bundle arialdomartini/oh-my-git
+#antigen theme arialdomartini/oh-my-git-themes oppa-lana-style
+
+# Tell antigen that you're done.
+antigen apply
+
+
+
+
+# ENV setting for local matchine
+source ~/.shenyunhang-zsh/local_env_rc
+
