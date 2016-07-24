@@ -1,3 +1,4 @@
+export ADOTDIR=~/.shenyunhang-zsh/antigen
 source ~/.shenyunhang-zsh/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
