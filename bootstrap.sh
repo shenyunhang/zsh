@@ -177,6 +177,12 @@ setup_vundle() {
     debug
 }
 
+setup_shell() {
+    msg             "\nsetting default shell to zsh"
+    chsh -s /bin/zsh
+}
+
+
 ############################ MAIN()
 variable_set "$HOME"
 program_must_exist "zsh"
@@ -203,6 +209,8 @@ sync_repo       "$APP_PATH/antigen/" \
                 "antigen"
 
 #setup_vundle    "$APP_PATH/.vimrc.bundles.default"
+
+setup_shell
 
 msg             "\n请打开新的zsh shell，插件会自动开始安装。"
 msg             "\nThanks for installing $app_name."
