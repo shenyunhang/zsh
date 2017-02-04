@@ -3,7 +3,7 @@
 
 ###安装方法
 ```bash
-sh <(curl https://raw.github.com/shenyunhang/zsh/master/bootstrap.sh -L)
+sh <(curl https://raw.github.com/shenyunhang/zshrc/master/bootstrap.sh -L)
 ```
 
 ###环境变量配置
