@@ -18,7 +18,7 @@
 app_name='shenyunhang-zshrc'
 [ -z "$APP_PATH" ] && APP_PATH="$HOME/.shenyunhang-zshrc"
 [ -z "$REPO_URI" ] && REPO_URI='https://github.com/shenyunhang/zshrc.git'
-[ -z "$REPO_BRANCH" ] && REPO_BRANCH='3.0'
+[ -z "$REPO_BRANCH" ] && REPO_BRANCH='0.1'
 debug_mode='0'
 fork_maintainer='0'
 [ -z "$ANTIGEN_URI" ] && ANTIGEN_URI="https://github.com/zsh-users/antigen"
