@@ -9,7 +9,7 @@ sh <(curl https://raw.github.com/shenyunhang/zshrc/master/bootstrap.sh -L)
 ###环境变量配置
 进入目录
 ```bash
-cd ~/.shenyunhang_zsh
+cd ~/.shenyunhang_zshrc
 ```
 复制配置文件
 ```bash
