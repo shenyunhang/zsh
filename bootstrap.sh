@@ -15,9 +15,9 @@
 #   limitations under the License.
 
 ############################  SETUP PARAMETERS
-app_name='shenyunhang-zsh'
-[ -z "$APP_PATH" ] && APP_PATH="$HOME/.shenyunhang-zsh"
-[ -z "$REPO_URI" ] && REPO_URI='https://github.com/shenyunhang/zsh.git'
+app_name='shenyunhang-zshrc'
+[ -z "$APP_PATH" ] && APP_PATH="$HOME/.shenyunhang-zshrc"
+[ -z "$REPO_URI" ] && REPO_URI='https://github.com/shenyunhang/zshrc.git'
 [ -z "$REPO_BRANCH" ] && REPO_BRANCH='3.0'
 debug_mode='0'
 fork_maintainer='0'
