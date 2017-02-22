@@ -84,7 +84,7 @@ lnif() {
 
 do_backup() {
     if [ -e "$1" ] || [ -e "$2" ] || [ -e "$3" ]; then
-        msg "Attempting to back up your original vim configuration."
+        msg "Attempting to back up your original zsh configuration."
         today=`date +%Y%m%d_%s`
         for i in "$1" "$2" "$3"; do
             [ -e "$i" ] && [ ! -L "$i" ] && mv -v "$i" "$i.$today";
@@ -136,7 +136,7 @@ create_symlinks() {
     #touch  "$target_path/.vimrc.local"
 
     ret="$?"
-    success "Setting up vim symlinks."
+    success "Setting up zsh symlinks."
     debug
 }
 
@@ -157,24 +157,6 @@ setup_fork_mode() {
         success "Created fork maintainer files."
         debug
     fi
-}
-
-setup_vundle() {
-    local system_shell="$SHELL"
-    export SHELL='/bin/sh'
-
-#    vim \
-#        -u "$1" \
-#        "+set nomore" \
-#        "+BundleInstall!" \
-#        "+BundleClean" \
-#        "+qall"
-
-    vim +PluginInstall +qall
-    export SHELL="$system_shell"
-
-    success "Now updating/installing plugins using Vundle"
-    debug
 }
 
 setup_shell() {
@@ -198,10 +180,6 @@ sync_repo       "$APP_PATH" \
 
 create_symlinks "$APP_PATH" \
                 "$HOME"
-
-#setup_fork_mode "$fork_maintainer" \
-                #"$APP_PATH" \
-                #"$HOME"
 
 sync_repo       "$APP_PATH/antigen/" \
                 "$ANTIGEN_URI" \
