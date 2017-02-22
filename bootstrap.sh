@@ -15,10 +15,10 @@
 #   limitations under the License.
 
 ############################  SETUP PARAMETERS
-app_name='shenyunhang-zsh'
-[ -z "$APP_PATH" ] && APP_PATH="$HOME/.shenyunhang-zsh"
-[ -z "$REPO_URI" ] && REPO_URI='https://github.com/shenyunhang/zsh.git'
-[ -z "$REPO_BRANCH" ] && REPO_BRANCH='3.0'
+app_name='shenyunhang-zshrc'
+[ -z "$APP_PATH" ] && APP_PATH="$HOME/.shenyunhang-zshrc"
+[ -z "$REPO_URI" ] && REPO_URI='https://github.com/shenyunhang/zshrc.git'
+[ -z "$REPO_BRANCH" ] && REPO_BRANCH='0.1'
 debug_mode='0'
 fork_maintainer='0'
 [ -z "$ANTIGEN_URI" ] && ANTIGEN_URI="https://github.com/zsh-users/antigen"
@@ -177,6 +177,12 @@ setup_vundle() {
     debug
 }
 
+setup_shell() {
+    msg             "\nsetting default shell to zsh"
+    chsh -s /bin/zsh
+}
+
+
 ############################ MAIN()
 variable_set "$HOME"
 program_must_exist "zsh"
@@ -203,6 +209,8 @@ sync_repo       "$APP_PATH/antigen/" \
                 "antigen"
 
 #setup_vundle    "$APP_PATH/.vimrc.bundles.default"
+
+setup_shell
 
 msg             "\n请打开新的zsh shell，插件会自动开始安装。"
 msg             "\nThanks for installing $app_name."
