@@ -1,5 +1,5 @@
-export ADOTDIR=~/.shenyunhang-zsh/antigen
-source ~/.shenyunhang-zsh/antigen/antigen.zsh
+export ADOTDIR=~/.shenyunhang-zshrc/antigen
+source ~/.shenyunhang-zshrc/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -28,5 +28,5 @@ antigen apply
 
 
 # ENV setting for local matchine
-source ~/.shenyunhang-zsh/local_env_rc
+source ~/.shenyunhang-zshrc/local_env_rc
 
