@@ -21,5 +21,5 @@ export MATLAB_ROOT=/usr/local/MATLAB/R2014b
 export PYTHONPATH=/home/shenyunhang/Documents/caffe/python:$PYTHONPATH
 
 
-fortune -e song100 tang300 shijing chinese
+fortune -e 先秦 两汉 魏晋 南北朝 隋代 唐代 五代 宋代 金朝 元代 明代 清代
 echo ''
