@@ -190,6 +190,6 @@ sync_repo       "$APP_PATH/antigen/" \
 
 setup_shell
 
-msg             "\n请打开新的zsh shell，插件会自动开始安装。"
+msg             "\n注销用户后打开新的终端，插件将会自动开始安装。"
 msg             "\nThanks for installing $app_name."
 msg             "© `date +%Y` http://121.192.180.179"
