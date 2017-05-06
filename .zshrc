@@ -1,4 +1,9 @@
+# The following environment variables can be set to customize the behavior of Antigen.
+# Make sure you set them before source-ing antigen.zsh.
 export ADOTDIR=~/.shenyunhang-zshrc/antigen
+
+# A typical .zshrc might look like this
+# --------------------------------------------------------------
 source ~/.shenyunhang-zshrc/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
@@ -23,10 +28,10 @@ antigen theme robbyrussell
 
 # Tell antigen that you're done.
 antigen apply
-
-
-
+# --------------------------------------------------------------
 
 # ENV setting for local matchine
 source ~/.shenyunhang-zshrc/local_env_rc
 
+# powerline for zsh prompt
+. /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh

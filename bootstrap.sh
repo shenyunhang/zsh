@@ -169,6 +169,7 @@ setup_shell() {
 variable_set "$HOME"
 program_must_exist "zsh"
 program_must_exist "git"
+program_must_exist "powerline"
 
 
 do_backup       "$HOME/.zshrc" \
