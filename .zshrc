@@ -1,3 +1,4 @@
+export TERM="xterm-256color"
 # The following environment variables can be set to customize the behavior of Antigen.
 # Make sure you set them before source-ing antigen.zsh.
 export ADOTDIR=~/.shenyunhang-zshrc/antigen
@@ -20,8 +21,9 @@ antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load the theme.
-antigen theme robbyrussell
+#antigen theme robbyrussell
 
+antigen theme bhilburn/powerlevel9k powerlevel9k
 
 #antigen-bundle arialdomartini/oh-my-git
 #antigen theme arialdomartini/oh-my-git-themes oppa-lana-style
@@ -32,6 +34,3 @@ antigen apply
 
 # ENV setting for local matchine
 source ~/.shenyunhang-zshrc/local_env_rc
-
-# powerline for zsh prompt
-. /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
