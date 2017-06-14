@@ -5,7 +5,7 @@ export PATH=/usr/local/cuda/bin/:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 
 #MKL
-export LD_LIBRARY_PATH=/opt/intel/mkl/lib/intel64:$LD_LIBRARY_PATH
+#export LD_LIBRARY_PATH=/opt/intel/mkl/lib/intel64:$LD_LIBRARY_PATH
 
 #opencv
 export LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
@@ -16,10 +16,10 @@ export PYTHONPATH=/usr/local/lib/python2.7/site-packages/:$PYTHONPATH
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
 
 #matlab
-export MATLAB_ROOT=/usr/local/MATLAB/R2014b
+#export MATLAB_ROOT=/usr/local/MATLAB/R2014b
 
 #CAFFE
-export PYTHONPATH=/home/shenyunhang/Documents/caffe/python:$PYTHONPATH
+#export PYTHONPATH=/home/shenyunhang/Documents/caffe/python:$PYTHONPATH
 
 
 fortune -e 先秦 两汉 魏晋 南北朝 隋代 唐代 五代 宋代 金朝 元代 明代 清代
