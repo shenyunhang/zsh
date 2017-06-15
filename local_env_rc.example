@@ -21,6 +21,8 @@ export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
 #CAFFE
 #export PYTHONPATH=/home/shenyunhang/Documents/caffe/python:$PYTHONPATH
 
+# vim
+export EDITOR=vim
 
 fortune -e 先秦 两汉 魏晋 南北朝 隋代 唐代 五代 宋代 金朝 元代 明代 清代
 echo ''
