@@ -161,7 +161,7 @@ setup_fork_mode() {
 
 setup_shell() {
     msg             "\nsetting default shell to zsh"
-    chsh -s /bin/zsh
+    sudo chsh -s /bin/zsh
 }
 
 
