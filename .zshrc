@@ -1,4 +1,5 @@
-export TERM="xterm-256color"
+#export TERM="xterm-256color"
+export TERM=screen-256color
 # The following environment variables can be set to customize the behavior of Antigen.
 # Make sure you set them before source-ing antigen.zsh.
 export ADOTDIR=~/.shenyunhang-zshrc/antigen
