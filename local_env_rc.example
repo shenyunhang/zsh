@@ -15,6 +15,9 @@ export CPATH=/usr/local/include/:$CPATH
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages/:$PYTHONPATH
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
 
+# python
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages/:$PYTHONPATH
+
 #matlab
 #export MATLAB_ROOT=/usr/local/MATLAB/R2014b
 
