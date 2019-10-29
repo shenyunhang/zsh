@@ -1,44 +1,15 @@
 # ENV setting for local matchine
 
 # common (or opencv)
-if [ -z "$PATH"  ]
-then
-	export PATH=/usr/local/bin/
-else
-	export PATH=/usr/local/bin/:$PATH
-fi
-if [ -z "$LD_LIBRARY_PATH"  ]
-then
-	export LD_LIBRARY_PATH=/usr/local/lib/
-else
-	export LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
-fi
-if [ -z "$LIBRARY_PATH"  ]
-then
-	export LIBRARY_PATH=/usr/local/lib/
-else
-	export LIBRARY_PATH=/usr/local/lib/:$LIBRARY_PATH
-fi
-if [ -z "$CPATH"  ]
-then
-	export CPATH=/usr/local/include/
-else
-	export CPATH=/usr/local/include/:$CPATH
-fi
-if [ -z "$PKG_CONFIG_PATH"  ]
-then
-	export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
-else
-	export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
-fi
+export PATH=/usr/local/bin/:$PATH
+export LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
+export LIBRARY_PATH=/usr/local/lib/:$LIBRARY_PATH
+export CPATH=/usr/local/include/:$CPATH
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
+
 
 # python
-if [ -z "$PYTHONPATH"  ]
-then
-	export PYTHONPATH=/usr/local/lib/python3.6/site-packages/
-else
-	export PYTHONPATH=/usr/local/lib/python3.6/site-packages/:$PYTHONPATH
-fi
+export PYTHONPATH=/usr/local/lib/python3.6/site-packages/:$PYTHONPATH
 
 # CUDA
 export PATH=/usr/local/cuda/bin/:$PATH
