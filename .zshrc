@@ -36,3 +36,5 @@ antigen apply
 
 # ENV setting for local matchine
 source ~/.shenyunhang-zshrc/local_env_rc
+
+alias python='/usr/bin/python3.8'

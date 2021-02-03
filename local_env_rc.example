@@ -25,10 +25,10 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64/:$LD_LIBRARY_PATH
 # export PYTHONPATH=/home/shenyunhang/Documents/caffe/python:$PYTHONPATH
 
 # Pytorch
-export LD_LIBRARY_PATH=/usr/local/lib/python3.6/dist-packages/torch/lib:$LD_LIBRARY_PATH
-export LIBRARY_PATH=/usr/local/lib/python3.6/dist-packages/torch/lib:$LIBRARY_PATH
-export CPATH=/usr/local/lib/python3.6/dist-packages/torch/include:$CPATH
-export PYTHONPATH=/usr/local/lib/python3.6/site-packages/:$PYTHONPATH
+export LD_LIBRARY_PATH=/usr/local/lib/python3.8/dist-packages/torch/lib:$LD_LIBRARY_PATH
+export LIBRARY_PATH=/usr/local/lib/python3.8/dist-packages/torch/lib:$LIBRARY_PATH
+export CPATH=/usr/local/lib/python3.8/dist-packages/torch/include:$CPATH
+export PYTHONPATH=/usr/local/lib/python3.8/site-packages/:$PYTHONPATH
 
 # vim
 export EDITOR=vim
